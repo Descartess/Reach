@@ -1,0 +1,35 @@
+{
+  "name": "reach",
+  "version": "0.0.1",
+  "description": "Developer Productivity tool that makes post and querying data from multiple platforms faster and seamless Edit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch index.js package.json --exec babel-node -presets env,stage-2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Descartess/Reach.git"
+  },
+  "author": "Paul Nyondo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Descartess/Reach/issues"
+  },
+  "homepage": "https://github.com/Descartess/Reach#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.11.0",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "graphql": "^0.11.7",
+    "graphql-server-express": "^1.2.0",
+    "graphql-tools": "^2.8.0"
+  }
+}
