@@ -2,10 +2,10 @@
   "name": "reach",
   "version": "0.0.1",
   "description": "Developer Productivity tool that makes post and querying data from multiple platforms faster and seamless Edit",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --watch index.js package.json --exec babel-node -presets env,stage-2"
+    "start": "nodemon --watch server --watch package.json  server/index.js --exec babel-node --presets env,stage-2"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,10 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "^6.24.1",
     "eslint": "^4.11.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1",
     "nodemon": "^1.12.1"
   },
   "dependencies": {
