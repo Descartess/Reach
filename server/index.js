@@ -3,11 +3,13 @@ import { makeExecutableSchema } from 'graphql-tools';
 import bodyParser from 'body-parser';
 import { graphiqlExpress, graphqlExpress } from 'graphql-server-express';
 import Schema from '../data/schema';
+import resolvers from '../data/resolvers';
 
 const app = express();
 
 const executableSchema = makeExecutableSchema({
   typeDefs: Schema,
+  resolvers,
 });
 
 app.use('/graphql', bodyParser.json(), graphqlExpress({

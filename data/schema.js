@@ -1,14 +1,29 @@
 const Schema = [
   `
     type StackoverFlowQuestion {
-        id: Int!
+        answer_id: Int
+    }
+
+    type Post {
+        id: Int,
+        title: String,
+        author: String
     }
 
     type Query {
-        questions: [StackoverFlowQuestion]
+        questions: [StackoverFlowQuestion],
+        posts: [Post]
     } 
+
+    type Mutation {
+        createPost(
+            id: Int!, title: String!, author: String!
+        ): Post
+    }
+
     schema {
-        query: Query
+        query: Query,
+        mutation: Mutation,
     }
     `,
 ];
